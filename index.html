@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caluclator by Michal Futera</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h3>Calculator</h3>
+        <input type="text" id="resultField">
+        <div id="result">
+            <button type="button" id="resultButton" onclick="calculate()">=</button>
+        </div>
+        <div id="pad">
+            <div id="numbers">
+                <button type="button" id="1" onclick="buttonClick('1')">1</button>
+                <button type="button" id="2" onclick="buttonClick('2')">2</button>
+                <button type="button" id="3" onclick="buttonClick('3')">3</button><br>
+                <button type="button" id="4" onclick="buttonClick('4')">4</button>
+                <button type="button" id="5" onclick="buttonClick('5')">5</button>
+                <button type="button" id="6" onclick="buttonClick('6')">6</button><br>
+                <button type="button" id="7" onclick="buttonClick('7')">7</button>
+                <button type="button" id="8" onclick="buttonClick('8')">8</button>
+                <button type="button" id="9" onclick="buttonClick('9')">9</button><br>
+                <button type="button" id="0" onclick="buttonClick('0')">0</button>
+                <button type="button" id="coma" onclick="buttonClick('coma')">,</button>
+                <button type="button" id="del" onclick="deleteField()">DEL</button>
+            </div>
+            <div id="calculations">
+                <button type="button" id="plus" onclick="buttonClick('plus')">+</button>
+                <button type="button" id="minus" onclick="buttonClick('minus')">-</button>
+                <button type="button" id="multiply" onclick="buttonClick('multiply')">*</button>
+                <button type="button" id="divide" onclick="buttonClick('divide')">/</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="scripts.js"></script>
+</html>
