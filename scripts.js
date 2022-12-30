@@ -1,13 +1,12 @@
-const buttonClick = buttonID => {
-    const result = document.getElementById("resultField").value;
-    const button = document.getElementById(buttonID).innerText;
-    document.getElementById("resultField").value = `${result}${button}`;
+const buttonClick = value => {
+    const result = document.getElementById("display").value;
+    document.getElementById("display").value = `${result}${value}`;
 }
 
 const deleteField = () => {
-    document.getElementById("resultField").value = `0`;
+    document.getElementById("display").value = `0`;
 }
 
 const calculate = () => {
-    document.getElementById("resultField").value = eval(document.getElementById("resultField").value);
+    document.getElementById("display").value = eval(document.getElementById("display").value);
 }

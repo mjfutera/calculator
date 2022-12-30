@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap');
+
+body {
+    font-family: 'Chivo Mono', monospace;
+    font-size: 30px;
+    background-image: url('background.jpg');
+    background-position:top center;
+    background-size: auto;
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.container {
+    box-shadow: 5px 5px;
+    background-color: white; 
+}
