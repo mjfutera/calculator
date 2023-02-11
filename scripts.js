@@ -1,12 +1,24 @@
+// Calculator by Michal Futera
+// v. 1.003
+// https://linktr.ee/mjfutera
+
+const array = [];
+
 const buttonClick = value => {
-    const result = document.getElementById("display").value;
-    document.getElementById("display").value = `${result}${value}`;
+    array.push(value);
+    document.getElementById("display").value = array.join('');
 }
 
 const deleteField = () => {
-    document.getElementById("display").value = `0`;
+    array.length = 0;
+    document.getElementById("display").value = array.join('');
+}
+
+const deleteLastField = () => {
+    array.pop();
+    document.getElementById("display").value = array.join('');
 }
 
 const calculate = () => {
-    document.getElementById("display").value = eval(document.getElementById("display").value);
+    document.getElementById("display").value = eval(array.join(''));
 }
